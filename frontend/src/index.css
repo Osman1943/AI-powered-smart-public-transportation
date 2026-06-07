@@ -1,0 +1,38 @@
+body {
+  background-color: #f4f7f6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Giriş ekranı için tam sayfa arkaplan resmi (ŞEHİR İÇİ OTOBÜS) ve karartma efekti */
+.login-wrapper {
+  background: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.85)), 
+              url('https://images.unsplash.com/photo-1570125909232-eb263c188f7e?q=80&w=1920&auto=format&fit=crop') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  color: white !important;
+  border-radius: 20px !important;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.glass-card input {
+  background: rgba(255, 255, 255, 0.9) !important;
+  border: none !important;
+  border-radius: 10px !important;
+  transition: all 0.3s ease;
+}
+
+.glass-card input:focus {
+  box-shadow: 0 0 15px rgba(13, 110, 253, 0.6) !important;
+  transform: translateY(-2px);
+}
